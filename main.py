@@ -123,6 +123,18 @@ def signin(payload: AuthRequest):
     return {"token": token, "user_id": str(user["_id"]) }
 
 
+@app.get("/me")
+def get_me(user=Depends(get_current_user)):
+    # expose minimal profile info
+    return {
+        "id": str(user.get("_id")),
+        "email": user.get("email"),
+        "plan": user.get("plan", "free"),
+        "locale": user.get("locale", "en"),
+        "twitch_user_id": user.get("twitch_user_id"),
+    }
+
+
 # Plan/feature gating simple defaults
 DEFAULT_FEATURES = [
     FeatureFlag(feature_key="widget.text", plan_name="free", allowed=True),
