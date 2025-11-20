@@ -1,9 +1,17 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [231] using StatReload
-INFO:     Started server process [233]
+INFO:     Started reloader process [278] using StatReload
+INFO:     Started server process [280]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:48716 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:39396 - "GET /i18n/en HTTP/1.1" 200 OK
-INFO:     172.20.0.1:39396 - "GET /i18n/en HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43102 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:35948 - "OPTIONS /overlays/691f0a33fa5cfbaa47cafdd6/widgets HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35962 - "OPTIONS /overlays/691f0a33fa5cfbaa47cafdd6/widgets HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35974 - "GET /i18n/en HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35970 - "GET /me HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35948 - "GET /overlays/691f0a33fa5cfbaa47cafdd6/widgets HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:35974 - "GET /i18n/en HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35962 - "GET /me HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35970 - "GET /overlays/691f0a33fa5cfbaa47cafdd6/widgets HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:35990 - "GET /i18n/en HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35990 - "GET /i18n/en HTTP/1.1" 200 OK
